@@ -1,0 +1,28 @@
+:root { 
+
+  --blue: #00f;
+  --blue-ally: #2196F3;
+  --gray-ally: #333333;
+  --green-ally: #00ff8c;
+
+  --font-ally: 'Nunito', sans-serif;
+
+}
+
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+
+  background: linear-gradient(45deg, var(--blue) 0, var(--green-ally) 110%);
+  color: var(--gray-ally);
+  font-family: var(--font-ally);
+  font-size: 13px;
+  font-weight: 300;
+
+}
