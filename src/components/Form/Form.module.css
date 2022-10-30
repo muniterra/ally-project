@@ -11,6 +11,7 @@
     background: linear-gradient(45deg, #00ff00 0, var(--green-ally) 110%);
     border: none;
     border-radius: 5px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
     color: var(--grey-ally);
     font-size: 15px;
     font-weight: 700;
