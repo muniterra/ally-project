@@ -1,19 +1,17 @@
+import styles from "./FormDestinations.module.css";
+
 function FormDestinations() {
   return (
-    <fieldset>
+    <fieldset className={styles.fieldContainer}>
       <legend>Destinos de Interesse:</legend>
 
-      <div>
-        <select name="countries">
+        <select className={styles.selectContainer} name="countries">
           <option disabled selected>Selecione os países desejados</option>
         </select>
-      </div>
       
-      <div>
-        <select name="cities">
+        <select className={styles.selectContainer} name="cities">
           <option disabled selected>Selecione as cidades desejadas</option>
         </select>
-      </div>
 
     </fieldset>
   );

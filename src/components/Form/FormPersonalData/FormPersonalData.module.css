@@ -1,0 +1,59 @@
+.fieldContainer {
+
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+    padding: 40px 40px 0;
+    width: 80%;
+
+}
+
+.fieldContainer legend {
+
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-top: 50px;
+
+}
+
+.fieldContainer .inputContainer {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 2rem;
+    width: calc(100% - 3rem);
+
+}
+
+.fieldContainer input {
+
+    border: none;
+    border-bottom: 1px solid var(--gray-ally);
+    font-size: 14px;
+    height: 3rem;
+    outline: none;
+
+}
+
+.fieldContainer label {
+
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.fieldContainer .inputContainer:focus-within input, .inputContainer:focus-within label {
+
+    border-bottom-color: 1px solid var(--blue-ally);
+    color: var(--blue-ally);
+
+}   
+ 
+@media screen and (min-width: 720px) {
+    .fieldContainer {
+        width: 500px;
+    }
+}

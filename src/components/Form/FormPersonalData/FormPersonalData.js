@@ -1,9 +1,11 @@
+import styles from "./FormPersonalData.module.css";
+
 function FormPersonalData() {
   return (
-    <fieldset>
+    <fieldset className={styles.fieldContainer}>
       <legend>Dados Pessoais:</legend>
 
-      <div>
+      <div className={styles.inputContainer}>
         <label htmlFor="name">Nome:</label>
         <input
           id="name"
@@ -14,7 +16,7 @@ function FormPersonalData() {
         />
       </div>
 
-      <div>
+      <div className={styles.inputContainer}>
         <label htmlFor="email">Email:</label>
         <input
           id="email"
@@ -25,7 +27,7 @@ function FormPersonalData() {
         />
       </div>
 
-      <div>
+      <div className={styles.inputContainer}>
         <label htmlFor="tel">Telefone:</label>
         <input
           id="tel"
@@ -37,7 +39,7 @@ function FormPersonalData() {
         />
       </div>
 
-      <div>
+      <div className={styles.inputContainer}>
         <label htmlFor="cpf">CPF:</label>
         <input
           id="cpf"

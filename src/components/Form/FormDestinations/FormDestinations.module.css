@@ -1,0 +1,42 @@
+.fieldContainer {
+
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+    padding: 40px 40px 0;
+    width: 80%;
+
+}
+
+.fieldContainer legend {
+
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 25px;
+    padding-top: 50px;
+
+}
+
+.fieldContainer .selectContainer {
+
+    height: 2rem;
+    margin: 0 0 2rem 25px;
+    outline: none;
+    width: calc(100% - 3rem);
+
+}
+
+.fieldContainer .selectContainer:focus {
+
+    border: 1px solid var(--blue-ally);
+    color: var(--blue-ally);
+
+}
+
+@media screen and (min-width: 720px) {
+    .fieldContainer {
+        width: 500px;
+    }
+}
