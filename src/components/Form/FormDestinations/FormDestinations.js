@@ -26,15 +26,14 @@ function FormDestinations() {
     .then((response) => response.json())
     .then((data) => {
       setCities(data);
-      console.log(data);;
     });
 
   return (
     <fieldset className={styles.fieldContainer}>
       <legend>Destinos de Interesse:</legend>
 
-      <select className={styles.selectContainer} name="countries">
-        <option disabled selected>
+      <select className={styles.selectContainer} multiple name="countries" required>
+        <option disabled defaultValue=''>
           Selecione os países desejados
         </option>
         {countries.map((country) => (
@@ -44,8 +43,8 @@ function FormDestinations() {
         ))}
       </select>
 
-      <select className={styles.selectContainer} name="cities">
-        <option disabled selected>
+      <select className={styles.selectContainer} multiple name="cities" required>
+        <option disabled defaultValue=''>
           Selecione as cidades desejadas
         </option>
         {cities.map(
