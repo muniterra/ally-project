@@ -4,10 +4,10 @@ import FormDestinations from "./FormDestinations/FormDestinations";
 function Form () {
 
     return (
-        <Form>
+        <form>
             <FormPersonalData></FormPersonalData>
             <FormDestinations></FormDestinations>
-        </Form>
+        </form>
     )
 
 }
